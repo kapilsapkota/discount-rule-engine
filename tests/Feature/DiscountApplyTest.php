@@ -4,6 +4,8 @@ use App\Models\Discount;
 use App\Models\Category;
 use Illuminate\Http\Response;
 
+uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+
 beforeEach(function () {
     $this->electronicsCategory = Category::create(['name' => 'Electronics']);
     $this->clothingCategory = Category::create(['name' => 'Clothing']);
